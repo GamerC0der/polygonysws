@@ -93,3 +93,23 @@ main {
     transform: perspective(500px) rotateX(5deg) translateY(2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.3);
   }
+
+  #countdownCanvas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  #countdownCanvas canvas {
+    position: relative !important;
+    border-radius: 8px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }

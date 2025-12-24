@@ -90,6 +90,8 @@ function updateCountdown() {
   if (countdownElement) {
     countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s until Christmas!`;
   }
+
+  if (window.updateCountdownData) window.updateCountdownData(days, hours, minutes, seconds);
 }
 
 setInterval(updateCountdown, 1000);
