@@ -149,3 +149,22 @@ function animate() {
 }
 
 animate();
+
+const facts = [
+  "Jingle Bells was originally written for Thanksgiving, not Christmas.",
+  "The tradition of Christmas trees started in Germany in the 16th century.",
+  "Santa Claus is based on St. Nicholas, a 4th-century bishop from Turkey.",
+  "The first Christmas card was sent in 1843 by Sir Henry Cole.",
+  "Rudolph the Red-Nosed Reindeer was created in 1939 for a department store.",
+  "Christmas wasn't always on December 25th - it was moved to align with pagan festivals.",
+  "The word 'Christmas' comes from 'Cristes Maesse', meaning Christ's Mass.",
+  "Mistletoe was used by Druids as a symbol of fertility and peace.",
+  "The first artificial Christmas tree was made in Germany using goose feathers.",
+  "In Japan, KFC is a popular Christmas dinner tradition.",
+  "The tradition of hanging stockings comes from St. Nicholas dropping gold coins in stockings.",
+  "The world's largest Christmas present was the Statue of Liberty, given to the US by France."
+];
+
+document.getElementById('factBtn').addEventListener('click', () => {
+  document.getElementById('factDisplay').textContent = facts[Math.floor(Math.random() * 12)];
+});
