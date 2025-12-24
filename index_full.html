@@ -1,0 +1,39 @@
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<canvas id="bg"></canvas>
+<main>
+      <header>
+        <h1>Countdown to Christmas</h1>
+        <div id="countdown"></div>
+      </header>
+
+      <section class="left">
+        <p>
+Track Santa:
+        </p>
+        <ul>
+          <li><a href="https://www.noradsanta.org/en/map" target="_blank">NORAD Santa Tracker</a></li>
+          <li><a href="https://santatracker.google.com/" target="_blank">Google Santa Tracker</a></li>
+        </ul>
+      </section>
+      <section class="light">
+        <button id="factBtn">Get a Christmas Fun Fact!</button>
+        <p id="factDisplay"></p>
+      </section>
+
+
+      <section class="left">
+        <h2>Christmas Countdown</h2>
+        <div id="countdownCanvas"></div>
+      </section>
+</main>
+<footer>
+  <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Go Back</a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+<script type="module" src="/main.js"></script>
+<script src="/countdown.js"></script>
